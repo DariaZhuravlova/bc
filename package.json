@@ -9,6 +9,7 @@
     "@babel/polyfill": "^7.4.4",
     "@bigcommerce/stencil-utils": "^5.0.1",
     "@fancyapps/fancybox": "^3.5.7",
+    "chokidar": "^3.6.0",
     "cookie": "^0.3.1",
     "creditcards": "^3.0.1",
     "easyzoom": "^2.5.2",
@@ -27,7 +28,8 @@
     "superfish": "^1.7.10",
     "svg-injector": "^1.1.3",
     "sweetalert2": "^6.11.5",
-    "treemenu.js": "github:PSDCenter/custom-treeview"
+    "treemenu.js": "github:PSDCenter/custom-treeview",
+    "watchpack": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

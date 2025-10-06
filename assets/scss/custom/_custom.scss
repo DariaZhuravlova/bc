@@ -1,0 +1,20 @@
+.productView-customFields-top {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto;
+
+  .productView-customFields-item {
+    font-size: 24px;
+  }
+
+  .productView-customFields-name {
+    font-weight: 600;
+    color: #333;}
+
+  .productView-customFields-value {
+    color: #555;
+  }
+}

@@ -219,6 +219,66 @@
               </div>
             </div>
 
+                <!-- test start-->
+                <!-- {{#if product.custom_fields}}
+                <div class="productView-customFields-main">
+                    {{#each product.custom_fields}}
+                    <div class="customField customField-{{name}}">
+                        <span class="customField-name">{{name}}:</span>
+                        <span class="customField-value">{{value}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+                {{/if}} -->
+
+                {{#if product.custom_fields}}
+                <div class="productView-customFields-top">
+                    {{#each product.custom_fields}}
+                
+                    {{#eq name "Field One"}}
+                    <div class="productView-customFields-item">
+                        <span class="productView-customFields-name">{{name}}:</span>
+                        <span class="productView-customFields-value">{{value}}</span>
+                    </div>
+                    {{/eq}}
+                
+                    {{#eq name "Field Two"}}
+                    <div class="productView-customFields-item">
+                        <span class="productView-customFields-name">{{name}}:</span>
+                        <span class="productView-customFields-value">{{value}}</span>
+                    </div>
+                    {{/eq}}
+                
+                    {{#eq name "Field Three"}}
+                    <div class="productView-customFields-item">
+                        <span class="productView-customFields-name">{{name}}:</span>
+                        <span class="productView-customFields-value">{{value}}</span>
+                    </div>
+                    {{/eq}}
+                
+                    {{#eq name "Field Four"}}
+                    <div class="productView-customFields-item">
+                        <span class="productView-customFields-name">{{name}}:</span>
+                        <span class="productView-customFields-value">{{value}}</span>
+                    </div>
+                    {{/eq}}
+                
+                    {{#eq name "Field Five"}}
+                    <div class="productView-customFields-item">
+                        <span class="productView-customFields-name">{{name}}:</span>
+                        <span class="productView-customFields-value">{{value}}</span>
+                    </div>
+                    {{/eq}}
+                
+                    {{/each}}
+                </div>
+                {{/if}}
+
+
+
+                
+                <!--test end -->
+
             {{product.detail_messages}}
             <dl class="productView-info">
               {{#if product.sku}}
