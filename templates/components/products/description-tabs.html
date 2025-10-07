@@ -13,27 +13,49 @@
 </section>
 {{/if}}
 
+<!-- start  -->
+
 {{#if product.custom_fields}}
-    <section class="toggle">
-      {{#if product.custom_fields}}
-      <h4 class="toggle-title">
-          <a href="#tab-custom_fields" class="toggleLink" data-collapsible>
-            <svg class="icon--name"><use xlink:href="#icon-product-other-details"></use></svg>
-            <span>{{lang 'products.other-details'}}</span>
-            <svg class="toggle-down-arrow"><use xlink:href="#icon-keyboard-arrow-down"></use></svg>
-          </a>
-      </h4>
-      {{/if}}
-      {{#if product.custom_fields}}
-        <div class="toggle-content clearfix" id="tab-custom_fields">
-          {{#each product.custom_fields}}
-              <dt class="productView-info-name">{{name}}:</dt>
-              <dd class="productView-info-value">{{{value}}}</dd>
-          {{/each}}
-        </div>
-      {{/if}}
-    </section>
+<section class="toggle">
+  <h4 class="toggle-title">
+    <a href="#tab-custom_fields" class="toggleLink" data-collapsible>
+      <svg class="icon--name">
+        <use xlink:href="#icon-product-other-details"></use>
+      </svg>
+      <span>{{lang 'products.other-details'}}</span>
+      <svg class="toggle-down-arrow">
+        <use xlink:href="#icon-keyboard-arrow-down"></use>
+      </svg>
+    </a>
+  </h4>
+  <div class="toggle-content clearfix" id="tab-custom_fields">
+    {{#each product.custom_fields}}
+    {{#eq name "Field One"}}
+    {{else}}
+    {{#eq name "Field Two"}}
+    {{else}}
+    {{#eq name "Field Three"}}
+    {{else}}
+    {{#eq name "Field Four"}}
+    {{else}}
+    {{#eq name "Field Five"}}
+    {{else}}
+    <dt class="productView-info-name">{{name}}:</dt>
+    <dd class="productView-info-value">{{{value}}}</dd>
+    {{/eq}}
+    {{/eq}}
+    {{/eq}}
+    {{/eq}}
+    {{/eq}}
+    {{/each}}
+  </div>
+</section>
 {{/if}}
+
+
+
+
+<!-- end -->
 
 {{#if product.warranty}}
     <section class="toggle">
